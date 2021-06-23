@@ -13,19 +13,106 @@ body{
 
 #car{
     position: absolute;
-    bottom: 0px;
-    left: 1650px;
+    bottom: 10px;
+    left: 900px;
+}
+#car2 {
+    position: absolute;
+    bottom: 90px;
+    left: 950px;
+    
+}
+#car3 {
+    position: absolute;
+    bottom: 90px;
+    left: 800px;
+    
 }
 
 @keyframes race {
-    0%{
-            
+  /* RIGHT */
+    0% {
+        bottom: 10px;
+        left: 900px;
+        transform: rotate(0deg);
     }
+    15%{
+        bottom: 10px;
+        left: 1300px;
+        transform: rotate(-25deg);
+    }
+    20% {
+        bottom: 10px;
+        left: 1400px;
+        transform: rotate(-40deg);
+    }
+    25% {
+        bottom: 10px;
+        left: 1610px;
+        transform: rotate(-45deg);
+    }
+/* UP */
+    35% {
+        bottom: 300px;
+        left: 1605px;
+        transform: rotate(-50deg);
+    }
+    45% {
+        bottom: 500px;
+        left: 1605px;
+        transform: rotate(-80deg);
+    }
+    50% {
+        bottom: 900px;
+        left: 1605px;
+        transform: rotate(-90deg);
+    }
+   /* LEFT */
+    60% {
+        bottom: 900px;
+        left: 1300px;
+        transform: rotate(-180deg);
+    }
+    70% {
+        bottom: 900px;
+        left: 1000px;
+        transform: rotate(-210deg);
+    }
+    75% {
+        bottom: 900px;
+        left: 800px;
+        transform: rotate(-240deg);
+    }
+    /* DOWN*/
+    95% {
+        bottom: 450px;
+        left: 800px;
+        transform: rotate(-250deg);
+    }
+    100% {
+        bottom: 10px;
+        left: 800px;
+        transform: rotate(-300deg);
+    }
+
 }
 
-#car:hover{
+#car{
     animation-name: race;
     animation-delay: 1s;
-    animation-duration: 10s;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+#car2 {
+    animation-name: race;
+    animation-delay: 2s;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+#car3 {
+    animation-name: race;
+    animation-delay: 3s;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
 }
