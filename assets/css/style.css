@@ -1,0 +1,31 @@
+body{
+    margin:0 auto;
+}
+
+
+#road{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    bottom: 0px;
+    left: 800px;
+}
+
+#car{
+    position: absolute;
+    bottom: 0px;
+    left: 1650px;
+}
+
+@keyframes race {
+    0%{
+            
+    }
+}
+
+#car:hover{
+    animation-name: race;
+    animation-delay: 1s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
